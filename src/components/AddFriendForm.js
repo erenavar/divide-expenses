@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class AddFriendForm extends Component {
-  render() {
-    return <div>AddFriendForm</div>;
-  }
+export default function AddFriendForm() {
+  return <div>AddFriendForm</div>;
 }

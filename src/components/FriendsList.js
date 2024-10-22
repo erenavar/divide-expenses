@@ -1,5 +1,6 @@
 import React from "react";
 import initialFriends from "../utils/db.js";
+import Button from "./Button.js";
 
 export default function FriendsList() {
   const friends = initialFriends;
@@ -21,7 +22,7 @@ export default function FriendsList() {
             </p>
           )}
           {item.balance === 0 && <p>You and {item.name} are even</p>}
-          <button className="button">Select</button>
+          <Button>Select</Button>
         </li>
       ))}
     </ul>
