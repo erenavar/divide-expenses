@@ -21,6 +21,7 @@ export default function FriendsList() {
             </p>
           )}
           {item.balance === 0 && <p>You and {item.name} are even</p>}
+          <button className="button">Select</button>
         </li>
       ))}
     </ul>
