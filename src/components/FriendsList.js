@@ -3,11 +3,25 @@ import initialFriends from "../utils/db.js";
 
 export default function FriendsList() {
   const friends = initialFriends;
-  console.log("friends :>> ", friends);
+
   return (
     <ul>
       {friends.map((item) => (
-        <li>{item.id}</li>
+        <li>
+          <img src={item.image} alt={item.name} />
+          <h3>{item.name}</h3>
+          {item.balance < 0 && (
+            <p className="red">
+              You owe {item.name} {Math.abs(item.balance)}
+            </p>
+          )}
+          {item.balance > 0 && (
+            <p className="green">
+              {item.name} owes you {item.balance}
+            </p>
+          )}
+          {item.balance === 0 && <p>You and {item.name} are even</p>}
+        </li>
       ))}
     </ul>
   );
