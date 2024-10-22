@@ -1,4 +1,4 @@
-export const ititialFriends = [
+const initialFriends = [
   {
     id: "118836",
     name: "Clark",
@@ -18,3 +18,5 @@ export const ititialFriends = [
     balance: 0,
   },
 ];
+
+export default initialFriends;
