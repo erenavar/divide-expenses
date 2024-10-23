@@ -8,7 +8,7 @@ export default function FriendsList() {
   return (
     <ul>
       {friends.map((item) => (
-        <li>
+        <li key={item.id}>
           <img src={item.image} alt={item.name} />
           <h3>{item.name}</h3>
           {item.balance < 0 && (
