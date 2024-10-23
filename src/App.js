@@ -1,4 +1,5 @@
 import AddFriendForm from "./components/AddFriendForm";
+import Button from "./components/Button";
 import FriendsList from "./components/FriendsList";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
       <div className="sidebar">
         <FriendsList />
         <AddFriendForm />
+        <Button>Add Friend</Button>
       </div>
     </div>
   );
